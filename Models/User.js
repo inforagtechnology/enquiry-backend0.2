@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema(
       enum: ["user", "HR", "admin", "super-admin"],
       default: "user",
     },
-    isVerified: { type: Boolean, default: true },
+    isVerified: { type: Boolean, default: false },
     resetPasswordToken: String,
     resetPasswordExpire: Date,
   },
